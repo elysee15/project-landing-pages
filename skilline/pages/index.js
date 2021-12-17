@@ -45,7 +45,7 @@ export default function Home() {
           <p className='xs:w-full xs:px-8 md:w-2/3 mx-auto leading-loose mt-6 mb-10'>
             Skilline is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.
           </p>
-          <div className='flex flex-wrap gap-7 justify-center'>
+          <div className='flex flex-col md:flex-row gap-7 md:gap-0 justify-center'>
             <div className='relative'>
               <div className='absolute z-10 top-1/2  left-1/2 -translate-x-2/4 -translate-y-2/4'>
                 <h1 className='uppercase text-2xl font-bold text-white mb-3'>For Instructors</h1>
@@ -63,8 +63,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='flex xs:flex-col justify-center items-center py-10 px-4'>
-          <div className="xs:order-1 xs:w-full xs:px-4 w-1/2">
+        <section className='flex flex-col md:flex-row justify-center items-center py-10 px-4'>
+          <div className="order-1 md:order-none xs:w-full xs:px-4 w-1/2">
             <div className="bg-[url('../public/img/orange-circle.svg')] bg-contain bg-left-bottom bg-no-repeat">
               <h1 className='text-secondary font-medium xs:text-xl text-2xl xs:leading-normal lg:leading-loose mt-4'>Everything you can do in a physical classroom, <span className='text-primary'>you can do with Skilline</span></h1>
               <p className='leading-loose my-6'>Skilline’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.</p>
@@ -74,15 +74,14 @@ export default function Home() {
           <div className="xs:w-full w-1/2 lg:text-center">
             <div className='relative'>
               <Image src="/img/classroom.svg" width={500} height={300} layout="responsive" alt='' />
-              {/* <Image src="/img/classroom.svg" width={500} height={300} layout="intrinsic" alt='' /> */}
             </div>
           </div>
         </section>
 
-        <section className='text-center px-8'>
+        <section className='text-center px-8 md:mt-10'>
           <h1 className='text-secondary font-medium xs:text-2xl text-3xl'>Our <span className='text-primary'>Features</span></h1>
           <p className='my-5'>This very extraordinary feature, can make learning activities more efficient</p>
-          <div className='flex xs:flex-col justify-center items-center'>
+          <div className='flex flex-col md:flex-row justify-center items-center'>
             <div className='xs:w-full w-2/3 relative'>
               <Image src="/img/ui-classroom.svg" width={500} height={300} layout="responsive" alt='' />
             </div>
@@ -106,20 +105,20 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='flex xs:flex-col xs:gap-y-4 items-center my-20 px-8'>
-          <div className='xs:w-full order-2 w-1/2'>
-            <div className='xs:w-full w-96 mx-auto leading-loose'>
+        <section className='flex flex-col gap-y-4 md:flex-row items-center mt-14 md:mt-20 px-8'>
+          <div className='w-full md:w-1/2 order-1 md:order-none'>
+            <div className='w-full md:w-96 mx-auto leading-loose'>
               <h1 className='text-secondary font-medium xs:text-2xl text-3xl mb-4'><span className='text-primary'>Tools</span> For Teachers And Learners</h1>
               <p>Class has a dynamic set of teaching tools built to be deployed and used during class.
                 Teachers can handout assignments in real-time for students to complete and submit.</p>
             </div>
           </div>
-          <div className='xs:w-full w-1/2'>
+          <div className='w-full md:w-1/2'>
             <Image src="/img/tools.svg" width={500} height={300} layout="intrinsic" alt='Tools' />
           </div>
         </section>
 
-        <section className='flex xs:flex-col xs:gap-y-4 px-8 items-center my-20'>
+        <section className='flex flex-col md:flex-row gap-y-4 px-8 items-center mt-14 md:mt-20'>
           <div className='xs:w-full w-1/2'>
             <Image src="/img/assessments.svg" width={400} height={400} layout="responsive" alt='Tools' />
           </div>
@@ -132,41 +131,41 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='flex xs:flex-col xs:gap-y-4 px-8 items-center'>
-          <div className='xs:w-full xs:order-2 w-1/2'>
-            <div className='xs:w-full w-96 mx-auto leading-loose'>
+        <section className='flex flex-col md:flex-row gap-y-4 md:mt-10 px-8 items-center'>
+          <div className='w-full md:w-1/2 order-1 md:order-none'>
+            <div className='w-full md:w-80 lg:w-96 mx-auto leading-loose'>
               <h1 className='text-secondary font-medium xs:text-2xl text-3xl mb-4'><span className='text-primary'>Class Management</span> Tools for Educators</h1>
               <p>Class has a dynamic set of teaching tools built to be deployed and used during class.
                 Teachers can handout assignments in real-time for students to complete and submit.</p>
             </div>
           </div>
-          <div className='xs:w-full w-1/2 relative'>
+          <div className='w-full md:w-1/2'>
             <Image src="/img/class-management.svg" width={500} height={300} layout="intrinsic" alt='Tools' />
           </div>
         </section>
 
-        <section className='flex xs:flex-col items-center xs:py-16 py-20 px-8'>
-          <div className='xs:w-full w-1/2'>
+        <section className='flex flex-col md:flex-row items-center md:gap-x-4 py-16 md:py-20 px-8'>
+          <div className='w-full md:w-1/2'>
             <Image src="/img/one-to-one.svg" width={500} height={400} layout="responsive" alt='Tools' />
           </div>
-          <div className='xs:w-full w-1/2'>
-            <div className='xs:w-full w-96 mx-auto leading-loose'>
+          <div className='w-full md:w-1/2'>
+            <div className='w-full md:w-96 mx-auto leading-loose'>
               <h1 className='text-secondary font-medium xs:text-2xl text-3xl mb-4'>One-on-One <span className='block text-primary'>Discussions</span></h1>
               <p>Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.</p>
             </div>
           </div>
         </section>
 
-        <div className="text-center mb-20">
-          <button className="xs:py-2 xs:px-4 py-4 px-8 border border-primary rounded-full text-primary">See more features</button>
+        <div className="text-center mb-10 md:mb-20">
+          <button className="py-2 px-4 md:py-4 md:px-8 border border-primary rounded-full text-primary">See more features</button>
         </div>
 
         <section className='flex items-center my-20 px-8'>
-          <div className='xs:hidden w-1/2'>
+          <div className='hidden md:block md:w-1/2'>
             <Image src="/img/education-tools.svg" width={500} height={300} layout="responsive" alt='Tools' />
           </div>
-          <div className='xs:w-full w-1/2'>
-            <div className='xs:w-full w-[26rem] mx-auto leading-loose'>
+          <div className='w-full md:w-1/2'>
+            <div className='w-full md:w-[20rem] lg:w-[26rem] mx-auto leading-loose'>
               <div className='flex gap-4 items-center mb-4'>
                 <hr className="w-12" />
                 <h1 className='uppercase tracking-wider font-light'>Integrations</h1>
@@ -178,46 +177,46 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='flex xs:flex-col xs:gap-y-5 items-center my-20 px-8'>
-          <div className='xs:w-full w-1/2 self-start'>
-            <div className='xs:w-full w-[26rem] mx-auto leading-loose'>
+        <section className='flex flex-col md:flex-row gap-y-5 items-center my-20 px-8'>
+          <div className='w-full md:w-1/2 self-start'>
+            <div className='w-full md:w-[20rem] lg:w-[26rem] mx-auto leading-loose'>
               <div className='flex gap-4 items-center mb-4'>
-                <hr className="xs:w-full w-12" />
+                <hr className="w-12" />
                 <h1 className='uppercase tracking-wider font-light'>Testimonial</h1>
               </div>
-              <h2 className='text-secondary font-medium xs:text-2xl text-3xl mb-4'>What They Say?</h2>
+              <h2 className='text-secondary font-medium text-2xl md:text-3xl mb-4'>What They Say?</h2>
               <p>Skilline has got more than 100k positive ratings from our users around the world.</p>
               <p>Some of the students and teachers were greatly helped by the Skilline.</p>
               <p>Are you too? Please give your assessment</p>
-              <div className='xs:w-full w-72 pl-4 justify-between items-center flex mt-4 border border-primary rounded-full text-primary'>
+              <div className='w-full md:w-72 pl-4 justify-between items-center flex mt-4 border border-primary rounded-full text-primary'>
                 <div>Write your assessment</div>
-                <div className='border rounded-full xs:h-10 xs:w-10 h-14 w-14 flex justify-center items-center'>→</div>
+                <div className='border rounded-full xs:h-10 w-10 h-14 md:w-14 flex justify-center items-center'>→</div>
               </div>
             </div>
           </div>
-          <div className='xs:w-full w-1/2'>
-            <Image src="/img/testimonial.svg" width={500} height={500} layout="responsive" alt='Tools' />
+          <div className='w-full md:w-1/2'>
+            <Image src="/img/testimonial.svg" width={500} height={500} layout="intrinsic" alt='Tools' />
           </div>
         </section>
 
         <section className='pb-20 px-8'>
           <h1 className='text-2xl font-medium text-center text-secondary'>Lastest News and Resources</h1>
           <p className='text-center py-10'>See the developments that have occurred to Skillines in the world</p>
-          <div className='flex xs:flex-col gap-10'>
-            <div className='xs:w-full w-1/2 flex flex-col justify-between'>
-              <div className=''>
-                <Image src="/img/computer.svg" width={500} height={300} layout="responsive" alt='' />
+          <div className='flex flex-col md:flex-row gap-10'>
+            <div className='w-full md:w-1/2 flex flex-col justify-between'>
+              <div>
+                <Image src="/img/computer.svg" width={500} height={300} layout="responsive" alt='Computer' />
                 <div>
                   <span className='uppercase rounded-full bg-[#F4C467] text-purple xs:px-2 px-4 py-1 xs:text-xs text-sm'>news</span>
                 </div>
               </div>
-              <h3 className="text-purple my-5 text-lg">Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</h3>
+              <h3 className="text-purple my-3 xl:my-5 text-md xl:text-lg">Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</h3>
               <p className="text-sm leading-loose">Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
-              <p className='underline text-sm mt-3'>Read more</p>
+              <p className='underline text-sm mt-1 xl:mt-3'>Read more</p>
             </div>
-            <div className='flex flex-col justify-between xs:w-full gap-y-7 w-1/2'>
+            <div className='flex flex-col justify-between w-full gap-y-7 md:w-1/2'>
               <div className="flex">
-                <div className='relative xs:hidden'>
+                <div className='hidden md:block'>
                   <Image src="/img/girl-with-tablet.svg" width={500} height={300} layout="intrinsic" alt="" />
                 </div>
                 <div>
@@ -226,7 +225,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex">
-                <div className='xs:hidden'>
+                <div className='hidden md:block'>
                   <Image src="/img/meeting.svg" width={500} height={300} layout="intrinsic" alt="" />
                 </div>
                 <div>
@@ -235,7 +234,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex">
-                <div className='xs:hidden'>
+                <div className='hidden md:block'>
                   <Image src="/img/cat.svg" width={500} height={300} layout="intrinsic" alt="" />
                 </div>
                 <div>

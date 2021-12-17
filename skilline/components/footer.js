@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
 
     return (
-        <footer className="bg-purple flex flex-col items-center py-10 justify-between">
+        <footer className="flex flex-col items-center py-10 justify-between bg-[#252641]">
             <div className="w-72 flex items-center">
                 <div className="relative">
                     <Image src="/skilline-outline.svg" alt="Skilline" width={150} height={150} layout="intrinsic" />

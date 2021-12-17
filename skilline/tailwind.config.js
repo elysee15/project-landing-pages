@@ -18,7 +18,8 @@ module.exports = {
       'white': '#fff',
       sky: colors.sky,
       yellow: colors.yellow,
-      gray: colors.gray
+      gray: colors.gray,
+      ...colors
     },
     extend: {
       boxShadow: {
