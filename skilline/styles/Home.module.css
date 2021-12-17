@@ -1,0 +1,14 @@
+/* .container {
+  padding: 0 2rem;
+} */
+
+.header {
+  background: url("../public/img/hero.svg") no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: left bottom;
+}
+
+.card {
+  width: 21.563rem;
+}

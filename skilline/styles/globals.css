@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: "poppins", sans-serif;
+  color: #696984;
+}
+
+.hamburger-active span {
+  transition: transform 200ms linear;
+}
+.hamburger-active span:first-child {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-active span:last-child {
+  transform: translateY(-10px) rotate(-45deg);
+}
