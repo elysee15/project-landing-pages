@@ -11,7 +11,7 @@ function Navbar() {
     }
 
     return (
-        <nav className="flex justify-between items-center font-light text-sm container mx-auto pt-4 xs:px-8">
+        <nav className="flex justify-between items-center font-light text-sm container mx-auto pt-4 px-8">
             <div className="relative">
                 <Image src="/logo.svg" alt="Skilline" width={100} height={100} layout="intrinsic" />
             </div>

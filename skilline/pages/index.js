@@ -4,8 +4,8 @@ import Card from '../components/Card'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import Layout from '../components/layout'
-import Navbar from '../components/navbar'
 import styles from '../styles/Home.module.css'
+
 
 export default function Home() {
   return (
@@ -41,22 +41,22 @@ export default function Home() {
         </section>
 
         <section className='text-center px-4'>
-          <h1 className='text-secondary text-2xl font-bold tracking-wide xs:mt-20 mb-5'>What is <span className='text-primary'>Skilline?</span></h1>
+          <h1 className='text-secondary text-2xl font-bold tracking-wide mt-20 mb-5'>What is <span className='text-primary'>Skilline?</span></h1>
           <p className='xs:w-full xs:px-8 md:w-2/3 mx-auto leading-loose mt-6 mb-10'>
             Skilline is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.
           </p>
           <div className='flex flex-col md:flex-row gap-7 md:gap-0 justify-center'>
             <div className='relative'>
               <div className='absolute z-10 top-1/2  left-1/2 -translate-x-2/4 -translate-y-2/4'>
-                <h1 className='uppercase text-2xl font-bold text-white mb-3'>For Instructors</h1>
-                <button className="xs:py-2 xs:px-4 xs:text-sm py-4 px-8 border border-white rounded-full text-white">Start a class today</button>
+                <h1 className='uppercase md:text-2xl font-bold text-white mb-3'>For Instructors</h1>
+                <button className="py-1 sm:py-2 md:px-4 text-sm md:text-md md:py-4 lg:px-8 border border-white rounded-full text-white">Start a class today</button>
               </div>
               <Image src="/img/instructor.svg" width={500} height={300} layout="intrinsic" alt='' />
             </div>
             <div className='relative'>
               <div className='absolute z-10 top-1/2  left-1/2 -translate-x-2/4 -translate-y-2/4'>
-                <h1 className='uppercase text-2xl font-bold text-white mb-3'>For students</h1>
-                <button className="xs:py-2 xs:px-4 xs:text-sm py-4 px-8 rounded-full text-white bg-sky-400/80">Enter access code</button>
+                <h1 className='uppercase md:text-2xl font-bold text-white mb-3'>For students</h1>
+                <button className="py-1 w-32 sm:w-auto sm:py-2 px-4 text-sm md:py-4 md:px-8 rounded-full text-white bg-sky-400/80">Enter access code</button>
               </div>
               <Image src="/img/students.svg" width={500} height={300} layout="intrinsic" alt='' />
             </div>
@@ -64,14 +64,14 @@ export default function Home() {
         </section>
 
         <section className='flex flex-col md:flex-row justify-center items-center py-10 px-4'>
-          <div className="order-1 md:order-none xs:w-full xs:px-4 w-1/2">
+          <div className="order-1 md:order-none w-full xs:px-4 md:w-1/2">
             <div className="bg-[url('../public/img/orange-circle.svg')] bg-contain bg-left-bottom bg-no-repeat">
-              <h1 className='text-secondary font-medium xs:text-xl text-2xl xs:leading-normal lg:leading-loose mt-4'>Everything you can do in a physical classroom, <span className='text-primary'>you can do with Skilline</span></h1>
+              <h1 className='text-secondary font-medium text-xl md:text-2xl xs:leading-normal lg:leading-loose mt-4'>Everything you can do in a physical classroom, <span className='text-primary'>you can do with Skilline</span></h1>
               <p className='leading-loose my-6'>Skilline’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.</p>
             </div>
             <p className='underline'>Learn more</p>
           </div>
-          <div className="xs:w-full w-1/2 lg:text-center">
+          <div className="w-full md:w-1/2 lg:text-center">
             <div className='relative'>
               <Image src="/img/classroom.svg" width={500} height={300} layout="responsive" alt='' />
             </div>
@@ -82,10 +82,10 @@ export default function Home() {
           <h1 className='text-secondary font-medium xs:text-2xl text-3xl'>Our <span className='text-primary'>Features</span></h1>
           <p className='my-5'>This very extraordinary feature, can make learning activities more efficient</p>
           <div className='flex flex-col md:flex-row justify-center items-center'>
-            <div className='xs:w-full w-2/3 relative'>
+            <div className='w-full md:w-2/3 relative'>
               <Image src="/img/ui-classroom.svg" width={500} height={300} layout="responsive" alt='' />
             </div>
-            <div className='xs:w-full w-1/3 text-left'>
+            <div className='w-full md:w-1/3 text-left'>
               <h2 className='text-secondary font-medium xs:text-xl xs:mt-4 text-2xl leading-normal mb-8'>A <span className='text-primary'>user</span> interface designed for the classroom</h2>
               <div className='leading-loose flex flex-col gap-4'>
                 <div className='flex items-center gap-4'>
@@ -119,11 +119,11 @@ export default function Home() {
         </section>
 
         <section className='flex flex-col md:flex-row gap-y-4 px-8 items-center mt-14 md:mt-20'>
-          <div className='xs:w-full w-1/2'>
+          <div className='w-full md:w-1/2'>
             <Image src="/img/assessments.svg" width={400} height={400} layout="responsive" alt='Tools' />
           </div>
-          <div className='xs:w-full w-1/2'>
-            <div className='xs:w-full w-96 mx-auto leading-loose'>
+          <div className='w-full md:w-1/2'>
+            <div className='w-full md:w-96 mx-auto leading-loose'>
               <h1 className='text-secondary font-medium xs:text-2xl text-3xl mb-4'>Assessments, <span className='text-primary'>Quizzes</span>, Tests</h1>
               <p>Easily launch live assignments, quizzes, and tests.
                 Student results are automatically entered in the online gradebook.</p>
@@ -131,7 +131,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='flex flex-col md:flex-row gap-y-4 md:mt-10 px-8 items-center'>
+        <section className='flex flex-col md:flex-row gap-y-4 mt-10 px-8 items-center'>
           <div className='w-full md:w-1/2 order-1 md:order-none'>
             <div className='w-full md:w-80 lg:w-96 mx-auto leading-loose'>
               <h1 className='text-secondary font-medium xs:text-2xl text-3xl mb-4'><span className='text-primary'>Class Management</span> Tools for Educators</h1>
@@ -172,7 +172,7 @@ export default function Home() {
               </div>
               <h2 className='text-secondary font-medium xs:text-2xl text-3xl mb-4'>200+ educational tools and platform <span className='text-primary'>integrations</span></h2>
               <p>Schoology has every tool your classroom needs and comes pre-integrated with more than 200+ tools, student information systems (SIS), and education platforms.</p>
-              <button className="xs:py-2 xs:px-4 py-4 px-8 mt-4 border border-primary rounded-full text-primary">See All Integrations</button>
+              <button className="py-2 px-4 md:py-4 block mx-auto md:px-8 mt-4 border border-primary rounded-full text-primary">See All Integrations</button>
             </div>
           </div>
         </section>
